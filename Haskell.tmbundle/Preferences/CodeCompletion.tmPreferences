@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Code Completion</string>
+	<key>settings</key>
+	<dict>
+		<key>completionCommand</key>
+		<string>#! /bin/sh
+SRC_DIR=`cat $TM_PROJECT_DIRECTORY/.srcdir`
+PRJ_DIR="$TM_PROJECT_DIRECTORY/$SRC_DIR"
+
+cd $PRJ_DIR
+~/.cabal/bin/textmatetags $TM_FILEPATH $TM_CURRENT_WORD</string>
+	</dict>
+	<key>uuid</key>
+	<string>B1AB93CF-7620-43A4-8905-9BFC6D3434EC</string>
+</dict>
+</plist>

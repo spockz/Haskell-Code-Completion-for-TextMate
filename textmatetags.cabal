@@ -1,0 +1,18 @@
+name:                  textmatetags
+version:               0.0.1
+synopsis:              A ctags post-processor for use with textmate
+description:           A ctags post-processor for use with textmate
+license:               AllRightsReserved
+category:              Compilers/Interpreters
+copyright:             (c) 2008 Utrecht University
+author:                Alessandro Vermeulen
+maintainer:            Alessandro Vermeulen <alessandro.vermeulen@me.com>
+stability:             provisional
+homepage:              -
+build-type:            Simple
+cabal-version:         >= 1.2
+extra-source-files:    Main.hs
+
+executable textmatetags
+  main-is:             Main.hs
+  build-depends:       base>=4, haskell98, process >= 1.0.1.3
