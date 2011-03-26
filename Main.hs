@@ -17,10 +17,8 @@ main = do args <- getArgs
                   exitcode <- waitForProcess procHandle
                   
                   text <- readFile "/tmp/textmatetags"
-                  mapM_ (putStrLn) $ sort . nub -- . filter (isPrefixOf current_word) 
+                  mapM_ (putStrLn) $ sort . nub . filter (isPrefixOf current_word) 
                                    $ map (head . words) (lines text)
-                                   
-                  
             else
               hPutStrLn stderr "Provide a haskell file and a current word!"
   where command file = "echo \":ctags /tmp/textmatetags\" | ghci " ++ file ++" &> /tmp/runtags"

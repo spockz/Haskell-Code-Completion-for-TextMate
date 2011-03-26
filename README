@@ -29,3 +29,9 @@ project has the source folder as its root you are set. If not, place a file
 called `.srcdir' in the root of your TextMate project containing on the first
 line the location of the source directory relative to the TextMate project
 root.
+
+GitHub
+------
+The github repository for this project can be found at:
+  
+  https://github.com/spockz/Haskell-Code-Completion-for-TextMate
